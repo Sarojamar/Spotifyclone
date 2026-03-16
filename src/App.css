@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  padding: 20px;
+  height: 100%;
+  background: url("https://wallpapercrafter.com/desktop/123878-Sava-G-moonlight-deer-forest.jpg")
+  no-repeat center center fixed;
+background-size: cover;
+font-family: "Open Sans", sans-serif;
+}
+
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Style for track cards and music player */
+.playlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.track-card {
+  width: 250px;
+  margin: 15px;
+  cursor: pointer;
+  background-color: #282828;
   color: white;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.track-card:hover{
+  width: 280px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.track-image {
+  width: 100%;
+  height: auto;
+}
+
+.track-details {
+  padding: 10px;
+}
+
+.music-player {
+  color: white;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #121212;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #1db954;
+}
+.close-button {
+  background: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+
+body {
+  padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 20px 10px;
+  width: 100%;
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 20px rgba(227, 228, 237, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+   
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar {
+    width: 100%;
   }
+}
+
+.logo{
+  width: 1px;
+  height: 1px;
+  opacity: 2;
 }
