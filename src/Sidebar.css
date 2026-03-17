@@ -10,5 +10,49 @@
     text-decoration: none;
     display: block;
     margin: 10px 0;
+    align-items: center;
+    text-align: center;
   }
-  
+  .playlist-heading {
+  color: #b3b3b3;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 15px 15px 8px;
+  margin: 0;
+}
+
+.sidebar-playlist-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.sidebar-playlist-item:hover {
+  background-color: #282828;
+}
+
+.sidebar-playlist-item.active {
+  background-color: #282828;
+  border-left: 3px solid #1db954;
+}
+
+.sidebar-playlist-cover {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.sidebar-playlist-name {
+  color: white;
+  font-size: 13px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
